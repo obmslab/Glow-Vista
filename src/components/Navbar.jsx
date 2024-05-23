@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
+import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,22 +16,35 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#011936]">
+    <nav className="bg-[#011936] p-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-[#f5efed]">Logo</h1>
+            {/* <h1 className="text-[#f5efed]">Logo</h1> */}
+            <img src={Logo} alt="Logo" className="w-14"/>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-4">
+            <div className="ml-10 flex items-center text-2xl space-x-4">
               <Link to="/" className="text-[#f5efed]" onClick={closeMenu}>
                 Home
               </Link>
               <Link to="/about" className="text-[#f5efed]" onClick={closeMenu}>
                 About
               </Link>
+              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
+                Products
+              </Link>
               <Link to="/services" className="text-[#f5efed]" onClick={closeMenu}>
                 Services
+              </Link>
+              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
+                Career
+              </Link>
+              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
+                Testimonials
+              </Link>
+              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
+                Latest News
               </Link>
               <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
                 Contact
