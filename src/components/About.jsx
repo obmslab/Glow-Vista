@@ -3,6 +3,7 @@ import lab5 from "../assets/lab5.jpg";
 import Earu from "../assets/Earu.jpg";
 import Bala from "../assets/Bala.jpeg";
 import PKJ from "../assets/PKJ.jpeg";
+import "./style.css"
 
 const About = () => {
   const teamMembers = [
@@ -19,12 +20,12 @@ const About = () => {
     <div className="bg-gray-100 py-10">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold text-center mb-8">About Us</h1>
-        <div className="">
-        <p>Glowvista Instruments Private Limited, a startup incubated at the Foundation for Technology & Business Incubation (FTBI), NIT Rourkela, focuses on developing innovative smart biomedical technologies and instruments. Our mission is to create cost-effective point-of-care (PoC) devices that excel in both analytical and research applications, promoting better healthcare. Glowvista is spearheaded by Dr. Earu Banoth, Director, who is authorized to manage all goods and service tax-related issues for the company, including document presentation, liaising for GST registration, and making necessary alterations with government authorities.</p>
+        <div className="about_para">
+        <p><b>Glowvista Instruments Private Limited</b>, a startup incubated at the Foundation for Technology & Business Incubation (FTBI), NIT Rourkela, focuses on developing innovative smart biomedical technologies and instruments. Our mission is to create cost-effective point-of-care (PoC) devices that excel in both analytical and research applications, promoting better healthcare. Glowvista is spearheaded by <b>Dr. Earu Banoth , Director</b>, who is authorized to manage all goods and service tax-related issues for the company, including document presentation, liaising for GST registration, and making necessary alterations with government authorities.</p>
 
-        <p>Founded by Dr. Earu Banoth, with Dr. Bala Chakravarthy and Puneet Jain as co-founders, Glowvista Instruments Pvt. Ltd. operates under the guidelines of the Government of India. Our flagship project is the development of a handheld device to quantitatively screen malaria. This cutting-edge device leverages AI-enabled technology for rapid and accurate detection, integrating optics, optomechanics, microfluidic technology, artificial intelligence, and straightforward electronics. This combination of advanced technologies enables us to provide a sophisticated yet user-friendly solution for healthcare professionals.</p>
+        <p><b>Founded by Dr. Earu Banoth</b>, with <b>Dr. Bala Chakravarthy and Puneet Jain as co-founders</b>, Glowvista Instruments Pvt. Ltd. operates under the guidelines of the Government of India. Our flagship project is the development of a handheld device to quantitatively screen malaria. This cutting-edge device leverages AI-enabled technology for rapid and accurate detection, integrating optics, optomechanics, microfluidic technology, artificial intelligence, and straightforward electronics. This combination of advanced technologies enables us to provide a sophisticated yet user-friendly solution for healthcare professionals.</p>
 
-        <p>Our team is dedicated to pioneering advancements in biomedical technology, aiming to enhance diagnostic accuracy and improve health outcomes globally. At Glowvista, we are committed to pushing the boundaries of innovation in healthcare, making significant strides in the development of smart biomedical instruments designed to deliver precise and reliable diagnostic results.</p>
+        <p>Our team is dedicated to pioneering advancements in biomedical technology, aiming to enhance diagnostic accuracy and improve health outcomes globally. At Glowvista, <i><b>we are committed to pushing the boundaries of innovation in healthcare, making significant strides in the development of smart biomedical instruments designed to deliver precise and reliable diagnostic results.</b></i></p>
         </div>
         <div className="w-5/6 m-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           <motion.div
@@ -33,7 +34,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="bg-white rounded-lg shadow-md p-6"
           >
-            <h2 className="text-xl font-semibold mb-4">Our Mission</h2>
+            <h2 className="text-xl font-semibold mb-4"><b>Our Mission</b></h2>
             <p className="mb-4">
               At Biomedical Instrumentation Solutions, our mission is to
               revolutionize healthcare by developing innovative biomedical
@@ -54,7 +55,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="bg-white rounded-lg shadow-md p-6"
           >
-            <h2 className="text-xl font-semibold mb-4">Our Vision</h2>
+            <h2 className="text-xl font-semibold mb-4"><b>Our Vision</b></h2>
             <p className="mb-4">
               Our vision is to be a global leader in biomedical technology,
               known for our innovative solutions and exceptional service. We

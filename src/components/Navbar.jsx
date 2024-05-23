@@ -16,28 +16,28 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#011936] p-4">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className="bg-transparent p-4">
+      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-24">
           <div className="flex-shrink-0">
             {/* <h1 className="text-[#f5efed]">Logo</h1> */}
-            <img src={Logo} alt="Logo" className="w-14"/>
+            <img src={Logo} alt="Logo" className="w-[15.5rem]"/>
           </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-center text-2xl space-x-4">
-              <Link to="/" className="text-[#f5efed]" onClick={closeMenu}>
+          <div className="hidden md:block text-white">
+            <div className="ml-10 flex items-center text-xl space-x-4">
+              <Link to="/" className="text-[#ffffff]" onClick={closeMenu}>
                 Home
               </Link>
-              <Link to="/about" className="text-[#f5efed]" onClick={closeMenu}>
+              <Link to="/about" className="text-[#ffffff]" onClick={closeMenu}>
                 About
               </Link>
-              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
+              <Link to="/contact" className="text-[#ffffff]" onClick={closeMenu}>
                 Products
               </Link>
-              <Link to="/services" className="text-[#f5efed]" onClick={closeMenu}>
+              <Link to="/services" className="text-[#ffffff]" onClick={closeMenu}>
                 Services
               </Link>
-              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
+              <Link to="/contact" className="text-[#ffffff]" onClick={closeMenu}>
                 Career
               </Link>
               <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
