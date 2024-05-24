@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <div id="meta_data">
           <div id="notice">
-            <p><marquee direction="">NOTICE:- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tenetur ab, veniam eius quasi error deserunt, doloremque dolore architecto perferendis inventore molestiae ut, unde aliquam.</marquee></p>
+            <p><marquee direction="">NOTICE:- <a href="https://forms.gle/V3DBC39MtqNHfUVt8">Internship Openings</a>Interested People can apply for internsip in glow vista. </marquee></p>
           </div>
         </div>
     </div>
