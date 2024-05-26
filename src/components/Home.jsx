@@ -18,9 +18,9 @@ const Home = () => {
 
   return (
     <div className="bg-white">
-      <div className="main_div flex flex-col-reverse lg:flex-row lg:justify-evenly items-center p-8">
+      <div className="main_div flex flex-col-reverse lg:flex-row lg:justify-evenly items-center lg:p-8">
         <div id="text_sec">
-          <section className="sec1 text-xl lg:text-5xl text-[#45d5e2]">
+          <section className="text-xl lg:text-5xl text-[#45d5e2]">
             <h3>
               <b>
                 Empowering <u>Better Health</u>
@@ -42,7 +42,7 @@ const Home = () => {
               diagnostic accuracy and improve global health outcomes.
             </p>
           </section>
-          <button className="bg-[#32a2ac] hover:bg-teal-700 text-white py-4 px-6 rounded-lg mt-4">
+          <button className="bg-[#32a2ac] hover:bg-teal-700 text-white py-4 lg:px-6 px-[88px] rounded-lg mt-4">
             Download Catalog
           </button>
         </div>

@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { AiOutlineUser } from "react-icons/ai";
-import { FaShoppingCart } from "react-icons/fa";
 import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
@@ -15,49 +13,41 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const navLinks = [
+    { to: "/", text: "Home" },
+    { to: "/about", text: "About" },
+    { to: "/products", text: "Products" },
+    { to: "/services", text: "Services" },
+    { to: "/career", text: "Career" },
+    { to: "/testimonials", text: "Testimonials" },
+    { to: "/latestnews", text: "Latest News" },
+    { to: "/contact", text: "Contact" },
+  ];
+
+  const renderLinks = (closeMenu) =>
+    navLinks.map((link) => (
+      <Link
+        key={link.to}
+        to={link.to}
+        className="text-white block md:inline-block px-3 py-2 rounded-lg hover:bg-[#2596be]"
+        onClick={closeMenu}
+      >
+        {link.text}
+      </Link>
+    ));
+
   return (
     <nav className="bg-transparent p-4">
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div className="max-w-10xl mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           <div className="flex-shrink-0">
-            {/* <h1 className="text-[#f5efed]">Logo</h1> */}
-            <img src={Logo} alt="Logo" className="w-[15.5rem]"/>
+            <img src={Logo} alt="Logo" className="w-[15.5rem]" />
           </div>
           <div className="hidden md:block text-white">
-            <div className="ml-10 flex items-center text-xl space-x-4">
-              <Link to="/" className="text-[#ffffff]" onClick={closeMenu}>
-                Home
-              </Link>
-              <Link to="/about" className="text-[#ffffff]" onClick={closeMenu}>
-                About
-              </Link>
-              <Link to="/contact" className="text-[#ffffff]" onClick={closeMenu}>
-                Products
-              </Link>
-              <Link to="/services" className="text-[#ffffff]" onClick={closeMenu}>
-                Services
-              </Link>
-              <Link to="/contact" className="text-[#ffffff]" onClick={closeMenu}>
-                Career
-              </Link>
-              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
-                Testimonials
-              </Link>
-              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
-                Latest News
-              </Link>
-              <Link to="/contact" className="text-[#f5efed]" onClick={closeMenu}>
-                Contact
-              </Link>
-              <Link to="/profile" className="text-[#f5efed]">
-                <AiOutlineUser className="h-6 w-6" />
-              </Link>
-              <Link to="/store" className="text-[#f5efed]">
-                <FaShoppingCart className="h-6 w-6" />
-              </Link>
+            <div className="ml-10 flex items-center text-xl">
+              {renderLinks(closeMenu)}
             </div>
           </div>
-          {/* Hamburger menu for smaller screens */}
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
@@ -86,34 +76,10 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        {/* Responsive menu */}
         {isOpen && (
           <div className="md:hidden mt-2">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link to="/" className="text-white block" onClick={closeMenu}>
-                Home
-              </Link>
-              <Link
-                to="/about"
-                className="text-white block"
-                onClick={closeMenu}
-              >
-                About
-              </Link>
-              <Link
-                to="/services"
-                className="text-white block"
-                onClick={closeMenu}
-              >
-                Services
-              </Link>
-              <Link
-                to="/contact"
-                className="text-white block"
-                onClick={closeMenu}
-              >
-                Contact
-              </Link>
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+              {renderLinks(closeMenu)}
             </div>
           </div>
         )}

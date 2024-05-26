@@ -40,21 +40,11 @@ body {
   }
 
   #text_sec {
-    width: 90%;
-    margin: auto;
+    width: 100%;
     padding: 24px;
   }
 
   #pic_sec {
     width: 100%;
   }
-}
-
-.about_para {
-  text-align: justify;
-  padding: 25px 100px 50px;
-}
-
-.about_para p {
-  margin-bottom: 20px;
 }
