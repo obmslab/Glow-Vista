@@ -60,7 +60,7 @@ const LatestNews = () => {
                 className="w-full h-64 object-cover rounded-lg mb-4"
               />
               <div className="md:flex md:justify-between">
-                <div className="md:w-2/3">
+                <div className="md:w-auto">
                   <h3 className="lg:text-2xl text-lg font-semibold mb-2">
                     {newsItem.title}
                   </h3>

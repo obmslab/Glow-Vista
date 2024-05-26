@@ -62,7 +62,7 @@ const Testimonials = () => {
                   alt={testimonial.name}
                   className="w-32 h-32 object-cover rounded-full md:mr-6 mb-4 md:mb-0"
                 />
-                <div className="md:w-2/3">
+                <div className="md:w-auto">
                   <p className="lg:text-lg text-justify italic text-gray-50 mb-4">
                     {testimonial.quote}
                   </p>
