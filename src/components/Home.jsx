@@ -59,7 +59,7 @@ const Home = () => {
       <div id="meta_data">
         <div id="notice" className="text-center">
           <p>
-            <marquee id="noticeMarquee">z
+            <marquee id="noticeMarquee">
               | NOTICE 1 |
               <a
                 href="https://forms.gle/V3DBC39MtqNHfUVt8"
