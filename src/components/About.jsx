@@ -22,7 +22,7 @@ const About = () => {
         <h1 className="lg:text-3xl text-2xl font-bold text-center lg:mb-8 mb-4">
           About Us
         </h1>
-        <div className="about_para text-sm text-slate-100 text-justify">
+        <div className="about_para text-slate-100 text-justify">
           <p className="mb-4">
             <b>Glowvista Instruments Private Limited</b>, a startup incubated at
             the Foundation for Technology & Business Incubation (FTBI), NIT
