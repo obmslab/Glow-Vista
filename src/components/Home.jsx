@@ -1,5 +1,7 @@
 import "./style.css";
 import bgimg from "../assets/bg.svg";
+import GST_Certificate from "../assets/GST_Certificate.pdf";
+import UdyamRegistrationCertificate from "../assets/Print_UdyamRegistrationCertificate.pdf";
 
 const Home = () => {
   const stopMarquee = () => {
@@ -17,7 +19,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div>
       <div className="main_div flex flex-col-reverse lg:flex-row lg:justify-evenly items-center lg:p-8">
         <div id="text_sec">
           <section className="text-xl lg:text-5xl text-[#45d5e2]">
@@ -42,7 +44,7 @@ const Home = () => {
               diagnostic accuracy and improve global health outcomes.
             </p>
           </section>
-          <button className="bg-[#32a2ac] hover:bg-teal-700 text-white py-4 lg:px-6 px-[88px] rounded-lg mt-4">
+          <button className="bg-[#32a2ac] hover:bg-[#49bbc5] text-white py-4 lg:px-6 px-[88px] rounded-lg mt-4">
             Download Catalog
           </button>
         </div>
@@ -85,6 +87,26 @@ const Home = () => {
             </marquee>
           </p>
         </div>
+      </div>
+
+      {/* certifications */}
+
+      <div className="text-center my-8">
+        <h1 className="text-3xl text-white pb-8">Certification</h1>
+        <a
+          href={GST_Certificate}
+          download="GST_Certificate.pdf"
+          className="bg-[#32a2ac] hover:bg-[#49bbc5] text-white py-4 lg:px-6 px-[88px] rounded-lg m-4 inline-block"
+        >
+          Download GST Certification
+        </a>
+        <a
+          href={UdyamRegistrationCertificate}
+          download="UdyamRegistrationCertificate.pdf"
+          className="bg-[#32a2ac] hover:bg-[#49bbc5] text-white py-4 lg:px-6 px-[88px] rounded-lg m-4 inline-block"
+        >
+          Download UDYAM REGISTRATION CERTIFICATE
+        </a>
       </div>
     </div>
   );
