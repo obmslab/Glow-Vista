@@ -92,7 +92,7 @@ const Home = () => {
       {/* certifications */}
 
       <div className="text-center my-8">
-        <h1 className="text-3xl text-white pb-8">Certification</h1>
+        <h1 className="text-3xl text-white pb-8">Certifications</h1>
         <a
           href={GST_Certificate}
           download="GST_Certificate.pdf"
